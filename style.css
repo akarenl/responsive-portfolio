@@ -33,9 +33,13 @@ at browser widths above 768px
       /* Visual */
       background: white;
   }
-.navbar {
+.navbar,.page-footer {
     background-color: #199410;
 }
   .nav-link {
     color:#199410;
+  }
+
+  .page-footer,.footer{
+      color: white;
   }
