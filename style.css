@@ -10,21 +10,53 @@
       overflow-x:hidden;
   }
 
-  /*
-The width of the wrapper will be 1024px
-at browser widths above 768px
-*/
+  /* code from https://stackoverflow.com/questions/27215472/html5-tag-for-horizontal-line-break */
+  hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 8px auto;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+ }
+
   .wrapper {
       /* Box-model */
       width: 1024px;
+      height: auto;
 
       /* Positioning */
       margin: 40px auto;
   }
 
+  .card{
+      position: relative;
+      width: 250px;
+      height: 250px;
+      background: ;
+      box-sizing: border-box;
+      border-radius: 10px;
+  }
+
+  .box h3{
+      position: relative;
+      color: red;
+      text-align: center;
+      background: yellow;
+
+  }
+
   #main-content {
       /* Box-model */
-      width: 500px;
+      width: 100%;
+      height: 100%;
       padding: 30px;
 
       /* Positioning */
@@ -33,12 +65,12 @@ at browser widths above 768px
       /* Visual */
       background: white;
   }
-.navbar,.page-footer {
+.navbar,.page-footer,.btn {
     background-color: #199410;
 }
   .nav-link {
     color:#199410;
-  }
+  } 
 
   .page-footer,.footer{
       color: white;
