@@ -1,7 +1,9 @@
-
+* {
+    box-sizing: border-box;
+  }
   body {
       /* Visual, help with background: https://www.creative-tim.com/blog/web-design/bootstrap-background-image/ */
-      background-image: url(leaves.jpg);
+      background-image: url(assets/leaves.jpg);
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -36,27 +38,20 @@
       margin: 40px auto;
   }
 
-  .card{
-      position: relative;
-      width: 250px;
-      height: 250px;
-      background: ;
-      box-sizing: border-box;
-      border-radius: 10px;
-  }
+  .card-img-center {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+}
 
-  .box h3{
-      position: relative;
-      color: red;
-      text-align: center;
-      background: yellow;
-
-  }
-
+h3 {
+    text-align: center;
+    background-color: #199410;
+    color: white;
+}
   #main-content {
       /* Box-model */
       width: 100%;
-      height: 100%;
       padding: 30px;
 
       /* Positioning */
@@ -65,13 +60,73 @@
       /* Visual */
       background: white;
   }
+
+  #main-content h2{
+      color: #199410;
+  }
+
 .navbar,.page-footer,.btn {
     background-color: #199410;
 }
-  .nav-link {
+  .nav-link  {
     color:#199410;
   } 
 
   .page-footer,.footer{
       color: white;
   }
+
+/* Additional Screen Sizes */
+
+/* Width at 980px and below */
+@media screen and (max-width:980px) {
+
+  
+    .wrapper{
+      /* Box-model */
+      width: 80%;
+     padding: 30px;
+    }
+
+    .card{
+        width: 70%;
+        height: 70%;
+        padding: 0%;
+    }
+  
+    #main-content{
+      width: 100%;
+    }
+ 
+}
+  
+  /* Width at 768px and below */
+  @media screen and (max-width: 768px) {
+  
+    .wrapper {
+      /* Box-model */
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #main-content{
+      width: 100%;
+    }
+  
+    
+}
+
+   /* Width at 640px and below */
+   @media screen and (max-width: 640px) {
+  
+    .wrapper,.card-img-top{
+        /* Box-model */
+        width: 70%;
+        padding: 20px;
+      }
+    
+      #main-content{
+        width: 100%;
+      }
+ 
+   }
